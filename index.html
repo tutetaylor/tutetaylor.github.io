@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Programmer Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #121212;
+    color: #ddd;
+    line-height: 1.6;
+  }
+  header {
+    background: #1f2937;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid #2563eb;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2563eb;
+  }
+  header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+  nav {
+    margin-top: 1rem;
+  }
+  nav a {
+    color: #60a5fa;
+    text-decoration: none;
+    margin: 0 0.7rem;
+    font-weight: 500;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+  h2 {
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 0.5rem;
+    color: #60a5fa;
+    margin-bottom: 1rem;
+  }
+  #about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #cbd5e1;
+  }
+  #skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .skill {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  #projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 1.5rem;
+  }
+  .project-card {
+    background: #1e293b;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  .project-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #60a5fa;
+    margin-bottom: 0.75rem;
+  }
+  .project-desc {
+    flex-grow: 1;
+    color: #cbd5e1;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .project-link {
+    align-self: flex-start;
+    color: #2563eb;
+    background-color: #60a5fa;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  .project-link:hover {
+    background-color: #3b82f6;
+  }
+  #contact {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  #contact a {
+    color: #60a5fa;
+    margin: 0 0.8rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #374151;
+  }
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Jane Doe</h1>
+  <p>Full-Stack Developer | Problem Solver | Tech Enthusiast</p>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm Jane, a passionate full-stack developer with experience building scalable web applications and intuitive user interfaces. I love tackling challenging problems and learning new technologies to deliver impactful software solutions.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill">JavaScript (ES6+)</div>
+  <div class="skill">React</div>
+  <div class="skill">Node.js</div>
+  <div class="skill">Python</div>
+  <div class="skill">Django</div>
+  <div class="skill">HTML5 & CSS3</div>
+  <div class="skill">REST APIs</div>
+  <div class="skill">SQL & NoSQL</div>
+  <div class="skill">Git & GitHub</div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-card">
+    <div class="project-title">Task Manager App</div>
+    <div class="project-desc">A full-featured task manager web app with user authentication, task prioritization, and deadlines using React and Node.js.</div>
+    <a class="project-link" href="https://github.com/janedoe/task-manager" target="_blank" rel="noopener">View on GitHub</a>
+  </div>
+  <div class="project-card">
+    <div class="project-title">Portfolio Website</div>
+    <div class="project-desc">A responsive personal portfolio showcasing my projects, skills, and contact information, built with React and styled-components.</div>
+    <a class="project-link" href="https://janedoe.dev" target="_blank" rel="noopener">Visit Website</a>
+  </div>
+  <div class="project-card">
+    <div class="project-title">Blog API</div>
+    <div class="project-desc">A RESTful API for managing blog posts, comments, and users built with Django REST Framework and PostgreSQL.</div>
+    <a class="project-link" href="https://github.com/janedoe/blog-api" target="_blank" rel="noopener">View on GitHub</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Let's connect!</p>
+  <p>
+    <a href="mailto:jane.doe@example.com" aria-label="Email Jane Doe">Email</a> |
+    <a href="https://linkedin.com/in/janedoe" target="_blank" rel="noopener" aria-label="LinkedIn Profile">LinkedIn</a> |
+    <a href="https://github.com/janedoe" target="_blank" rel="noopener" aria-label="GitHub Profile">GitHub</a>
+  </p>
+</section>
+
+<footer>
+  &copy; 2024 Jane Doe. All rights reserved.
+</footer>
+
+<script>
+  // Smooth scroll for anchor links
+  document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e){
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
+
